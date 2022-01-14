@@ -4,7 +4,7 @@ import Estilo from '../estilo';
 export default (props) => {
     return (
         <View>
-            <Text style={Estilo.textoGrande}>Teste</Text>
+            <Text style={Estilo.textoGrande}>Lista de Produtos</Text>
         </View>
     );
 }
