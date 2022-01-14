@@ -12,12 +12,27 @@ import DiretaPai from './componentes/comunicacao_direta/DiretaPai';
 import IndiretaPai from './componentes/comunicacao_indireta/IndiretaPai';
 import DiferencaOS from './componentes/DiferencaOS';
 import ParOuImpar from './componentes/ParOuImpar';
-import Pai from './componentes/relacao/Pai';
+import Familia from './componentes/relacao/Familia';
+import Quadrado from './componentes/layout/Quadrado';
+import Membro from './componentes/relacao/Membro';
+import UsuarioLogado from './componentes/UsuarioLogado';
+import ListaProdutos from './componentes/produtos/ListaProdutos';
 const App = function () {
   return (
         <SafeAreaView style={Estilo.areaApp}>
-            <Pai/>
+            <ListaProdutos/>
             {/*
+                <Quadrado/>    
+                <UsuarioLogado usuario={{nome:"Eladio Júnior", email:"eladiojunior@gmail.com"}}/>
+                <UsuarioLogado usuario={{nome:"Eladio Júnior"}}/>
+                <UsuarioLogado usuario={{nome:"eladiojunior@gmail.com"}}/>
+                <UsuarioLogado usuario={null}/>
+                <UsuarioLogado usuario={{}}/>
+                <Familia sobrenome="Mendes Magalhães">
+                    <Membro nome="Daniela" sobrenome="Mendes Magalhães"/>
+                    <Membro nome="Beatriz" sobrenome="Mendes Magalhães"/>
+                    <Membro nome="Gustavo" sobrenome="Mendes Magalhães"/>
+                </Familia>
                 <ParOuImpar numero={20}/>
                 <DiferencaOS/>
                 <Contador/>
