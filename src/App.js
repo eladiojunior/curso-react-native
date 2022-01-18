@@ -21,9 +21,10 @@ import ListaProdutosFlatList from './componentes/produtos/ListaProdutosFlatList'
 const App = function () {
   return (
         <SafeAreaView style={Estilo.areaApp}>
+            <ListaProdutos/>
             <ListaProdutosFlatList/>
             {/*
-                <ListaProdutos/>
+                
                 <Quadrado/>    
                 <UsuarioLogado usuario={{nome:"Eladio Júnior", email:"eladiojunior@gmail.com"}}/>
                 <UsuarioLogado usuario={{nome:"Eladio Júnior"}}/>
