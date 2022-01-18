@@ -14,7 +14,9 @@ export default (props) => {
             <FlatList 
                 data={produtos}
                 keyExtractor={i => `${i.id}`}
-                renderItem={produtoRender}
+                renderItem={(( {item: p} ) => {
+                    <Text>{p.id} - {p.nome} R$ {p.preco}</Text>
+                })}
             />
         </View>
     );
