@@ -13,7 +13,7 @@ export default (props) => {
             <Text style={Estilo.textoGrande}>Lista de Produtos - FlatList</Text>
             <FlatList 
                 data={produtos}
-                keyExtractor={p => p.id}
+                keyExtractor={p => `${p.id}`}
                 renderItem={produtoRender}
             />
         </View>
