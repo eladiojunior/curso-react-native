@@ -17,11 +17,13 @@ import Quadrado from './componentes/layout/Quadrado';
 import Membro from './componentes/relacao/Membro';
 import UsuarioLogado from './componentes/UsuarioLogado';
 import ListaProdutos from './componentes/produtos/ListaProdutos';
+import ListaProdutosFlatList from './componentes/produtos/ListaProdutosFlatList';
 const App = function () {
   return (
         <SafeAreaView style={Estilo.areaApp}>
-            <ListaProdutos/>
+            <ListaProdutosFlatList/>
             {/*
+                <ListaProdutos/>
                 <Quadrado/>    
                 <UsuarioLogado usuario={{nome:"Eladio Júnior", email:"eladiojunior@gmail.com"}}/>
                 <UsuarioLogado usuario={{nome:"Eladio Júnior"}}/>
