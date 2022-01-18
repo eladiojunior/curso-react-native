@@ -6,14 +6,14 @@ import produtos from './dataProdutos';
 
 export default (props) => {
     const produtoRender = (( {item: p} ) => {
-        <Text key={p.id}>{p.id} - {p.nome} R$ {p.preco}</Text>
+        <Text>{p.id} - {p.nome} R$ {p.preco}</Text>
     });
     return (
         <View>
             <Text style={Estilo.textoGrande}>Lista de Produtos - FlatList</Text>
             <FlatList 
                 data={produtos}
-                keyExtractor={p => `${p.id}`}
+                keyExtractor={i => `${i.id}`}
                 renderItem={produtoRender}
             />
         </View>
