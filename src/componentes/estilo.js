@@ -1,6 +1,22 @@
 import {StyleSheet} from 'react-native';
 
 const styleApp = StyleSheet.create({
+    areaBolas: {
+        flexGrow: 1,
+        justifyContent: "space-evenly",
+        padding: 5
+    },
+    bola: {
+        height: 50,
+        width: 50,
+        backgroundColor: "#bbb",
+        borderRadius: 50
+    },
+    campoTexto: {
+        borderWidth: 1,
+        borderColor: '#000',
+        padding: 5,
+    },
     areaApp: {
         flexGrow: 1,
         justifyContent: 'center',

@@ -1,9 +1,12 @@
 import React from 'react';
 import {View, Text} from 'react-native';
+
 export default (props) => {
+    const lado = props.lado || 50;
     return (
-        <View>
-            <Text>Teste</Text>
-        </View>
+        <View style={{
+            height: lado,
+            width: lado,
+            backgroundColor: props.cor || '#000'}}/>
     );
 }
