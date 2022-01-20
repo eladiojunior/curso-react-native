@@ -6,7 +6,7 @@ export default (props) => {
     const valor = props.valor || "";
     return (
         <View style={Style.bola}>
-            <Text>{valor}</Text>
+            <Text style={Style.textoBola}>{valor}</Text>
         </View>
     );
 }

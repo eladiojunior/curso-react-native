@@ -2,15 +2,24 @@ import {StyleSheet} from 'react-native';
 
 const styleApp = StyleSheet.create({
     areaBolas: {
-        flexGrow: 1,
-        justifyContent: "space-evenly",
+        width: "100%",
+        flexDirection: "row",
+        flexWrap: "wrap",
+        justifyContent: "center",
         padding: 5
     },
     bola: {
-        height: 50,
-        width: 50,
+        height: 40,
+        width: 40,
         backgroundColor: "#bbb",
-        borderRadius: 50
+        borderRadius: 20,
+        justifyContent: "center",
+        alignItems: "center",
+        margin: 5
+    },
+    textoBola: {
+        fontSize: 18,
+        fontWeight: "bold",
     },
     campoTexto: {
         borderWidth: 1,
